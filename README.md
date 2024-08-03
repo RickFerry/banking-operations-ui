@@ -1,5 +1,3 @@
-## README.md
-
 # Aplicação Frontend para Operações Bancárias
 
 Esta é a aplicação frontend para a API de Operações Bancárias, desenvolvida com Angular e PrimeNG. A aplicação permite que os usuários realizem operações bancárias, como consultar saldo, depositar dinheiro, transferir fundos e sacar dinheiro.
