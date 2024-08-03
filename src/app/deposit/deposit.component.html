@@ -1,0 +1,14 @@
+<div class="card">
+  <h2>Depósito</h2>
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="accountId">Account ID</label>
+      <input id="accountId" type="text" pInputText [(ngModel)]="accountId">
+    </div>
+    <div class="p-field">
+      <label for="amount">Valor</label>
+      <input id="amount" type="number" pInputText [(ngModel)]="amount">
+    </div>
+    <button pButton type="button" label="Depositar" (click)="deposit()"></button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="card">
+  <h2>Consultar Saldo</h2>
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="accountId">Account ID</label>
+      <input id="accountId" type="text" pInputText [(ngModel)]="accountId">
+    </div>
+    <button pButton type="button" label="Consultar Saldo" (click)="getBalance()"></button>
+    <div *ngIf="balance !== undefined">
+      <h3>Saldo: {{ balance }}</h3>
+    </div>
+  </div>
+</div>

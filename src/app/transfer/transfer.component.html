@@ -1,0 +1,18 @@
+<div class="card">
+  <h2>Transferência</h2>
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="originAccountId">Conta de Origem</label>
+      <input id="originAccountId" type="text" pInputText [(ngModel)]="originAccountId">
+    </div>
+    <div class="p-field">
+      <label for="destinationAccountId">Conta de Destino</label>
+      <input id="destinationAccountId" type="text" pInputText [(ngModel)]="destinationAccountId">
+    </div>
+    <div class="p-field">
+      <label for="amount">Valor</label>
+      <input id="amount" type="number" pInputText [(ngModel)]="amount">
+    </div>
+    <button pButton type="button" label="Transferir" (click)="transfer()"></button>
+  </div>
+</div>

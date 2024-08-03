@@ -1,0 +1,18 @@
+<div class="card">
+  <h2>Saque</h2>
+  <div class="p-fluid">
+    <div class="p-field">
+      <label for="accountId">ID da Conta</label>
+      <input id="accountId" type="text" pInputText [(ngModel)]="accountId">
+    </div>
+    <div class="p-field">
+      <label for="amount">Valor</label>
+      <input id="amount" type="number" pInputText [(ngModel)]="amount">
+    </div>
+    <button pButton type="button" label="Sacar" (click)="withdraw()"></button>
+    <div *ngIf="response">
+      <h3>Resposta da API:</h3>
+      <pre>{{ response | json }}</pre>
+    </div>
+  </div>
+</div>
